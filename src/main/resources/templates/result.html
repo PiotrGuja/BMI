@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Wynik BMI</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+<h1>Twój wynik BMI</h1>
+<p>Wskaźnik BMI: <strong th:text="${bmi}">0.00</strong></p>
+<p>Kategoria: <strong th:text="${category}">Nieznana</strong></p>
+<a href="/">Oblicz ponownie</a>
+</body>
+</html>
